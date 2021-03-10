@@ -7,12 +7,6 @@ using namespace std;
 using namespace cv;
 
 int main(){
-  img_setup("empty.jpg");
-  img_setup("traffic.jpg");
-  return 0;
-}
-
-void img_setup(string s){
   Mat img1 = imread(s);
   if (img1.empty()){
     cout<<"Error loading the image"<<endl;
@@ -35,5 +29,5 @@ void img_setup(string s){
 
 
   waitkey(0);
-
+  return 0;
 }
